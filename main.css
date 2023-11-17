@@ -32,6 +32,37 @@ nav {
     background-color: #ff6a00;
 }
 
+  .navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #fff; /* Adjust to your design */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    /* Style for navigation links */
+    .navbar a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333; /* Adjust to your design */
+      font-weight: bold;
+    }
+    /* Style for shop buttons */
+    .shop-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px; /* Adjust to position below existing content */
+    }
+    /* Style for shop button images */
+    .shop-buttons img {
+      width: 100px; /* Adjust as needed */
+      height: 100px; /* Adjust as needed */
+      margin: 0 10px;
+    }
+
 .content {
     width: 100%;
     height: 700px;
