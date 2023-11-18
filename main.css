@@ -12,6 +12,21 @@ body, html {
     font-family: 'Courier';
 }
 
+ /* Centered sticky header style */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background-color: #fff; /* Adjust to your design */
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    .sticky-header h1 {
+      margin: 0;
+      font-size: 24px; /* Adjust to your preference */
+      font-weight: bold;
+      color: #333; /* Adjust to your design */
+    }
 
 header {
     width: 100%;
@@ -34,11 +49,9 @@ nav {
 
   .navbar {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 65px;
   z-index: 1000;
-  background-color: #fff; /* Adjust to your design */
+  background-color: #FFFFCC; /* Adjust to your design */
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
