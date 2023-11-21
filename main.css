@@ -8,7 +8,9 @@ body, html {
     width: 100%;
     margin: 4px;
     padding: 2px;
-    background-color: #F7D6C0;
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzFxeDd0b3B0NGNzeW5xbGE0aWIwcWhuMHRwcjQwemp1MmxxZTh1biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gZOhDPgsysM42gVKwh/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Courier new';
 }
 
@@ -16,7 +18,7 @@ body, html {
 .sticky-header {
   position: sticky;
   top: 0;
-  background-color: #3A4A3D; /* Soft background color */
+  background-color: #595e5e; /* Soft background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
   padding: 15px ; /* Adjusted padding */
   z-index: 1000;
@@ -28,7 +30,7 @@ body, html {
   padding: 5px;
   font-size: 30px; /* Larger font size */
   font-weight: 400; /* Slightly heavier font weight */
-  color: #F7D6C0; /* Softer text color */
+  color: #e5dace; /* Softer text color */
   text-transform: Uppercase; /* Uppercase text */
   box-shadow: 0px 0 20px; rgba(245, 206, 186, 0.9);
   border-radius: 5px;
@@ -43,20 +45,25 @@ nav {
 
   .navbar {
   position: sticky;
-  top: 55px;
+  overflow: hidden;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  top: 65px;
   z-index: 1000;
-  background-color: #FFFFCC; /* Adjust to your design */
-  padding: 10px;
+  background-color: #e5dace; /* Adjust to your design */
+  padding: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
     /* Style for navigation links */
     .navbar a {
-      margin-right: 10px;
+      margin: ;
+      text-align: center;
       text-decoration: none;
       color: #333; /* Adjust to your design */
       font-weight: bold;
     }
+
 div.c {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -72,8 +79,8 @@ div.c {
     }
     /* Style for shop button images */
     .shop-buttons img {
-      width: 100px; /* Adjust as needed */
-      height: 100px; /* Adjust as needed */
+      width: 200px; /* Adjust as needed */
+      height: 225pxpx; /* Adjust as needed */
       margin: 0 10px;
     }
 
