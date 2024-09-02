@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #e4e4e2, #d0cdc5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    overflow: auto;
+}
+
+h1 {
+    font-family: "Prata";
+    font-size: 2.986rem;
+    font-weight: 300;
+    width: fit-content;
+    margin: 0 auto;
+    height: fit-content;
+    color: #263c27;
+  
+}
+
+h4 {
+    font: lighter 1em "Bodoni Moda SC";
+    color: #e4e4e2;
+}
+
+.pageTitle {
+    border: 2px solid;
+    min-width: 30%;
+    padding:0;
+}
+
+.pageTitle h1 {
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+.pageTitle > p {
+    font-style: oblique ;
+    text-align: right;
+}
+
+••• TOP NAV BAR ••• */
+header {
+    margin: 20px 0;
+    display: flex;
+    height: fit-content;
+    padding: 5px;
+    align-items: center;
+    border: 2px solid yellow;
+    background-color: #61653950;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 6px auto;
+    padding: 10px 20px;
+    
+}
+
+button {
+    border-radius: 8px;
+}
+
+header button {
+    padding: 8px 20px;
+    border: 2px solid #2F3253;
+    height: min-content;
+    min-width: 145px;
+ 
+    margin: 0px 2px;
+}
+
+header button:hover {
+    background-color: #ff9a9e;
+    border: 2px solid #214338;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    padding: 0 100px;
+    border: 2px solid #2F3253;
+    height: 200px;
+    
+    
+}
+
+button.homeBtn {
+    background-image: url(houseBtn.png);
+    background-size:contain;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+nav button > a {
+    color: #344735;
+    border: 0px solid red;
+    text-decoration: none;
+    font: 1.15em "Georgia";
+    letter-spacing: 0.25rex;
+    min-width: 145px ;
+}
+
+
+
+button:hover > a {
+    color: #214338;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.containerGlass {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 100%;
+    width: 90%;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        inset 0 0 30px rgba(255, 255, 255, 0.2),
+        inset 0 0 10px rgba(255, 255, 255, 0.1),
+        inset 0 0 50px rgba(0, 0, 0, 0.2);
+        align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+
+
+button.glassButton {
+    padding: 0 100px;
+    border: 2px solid #2F3253;
+    height: 200px;
+    border-radius: 12px;
+    margin: 0px 2px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(220, 216, 208, 0.3));
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.6);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+button.glassButton:hover {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(220, 216, 208, 0.5));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15), -2px -2px 4px rgba(255, 255, 255, 0.5);
+}
+
+button.glassButtonDrop {
+    background-color: #214338;
+    visibility: hidden;
+    padding: 5px;
+
+}
+
+section.dropGlassMenu {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.dropGlassMenu:hover > button {
+    visibility: visible;
+    margin: 0 auto;
+    
+}
+
+
+
+
+.myWorkBox {
+    border: 3px solid #2F3253;
+    border-radius: 1em;
+    margin: 0 auto;
+}

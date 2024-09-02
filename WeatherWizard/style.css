@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2C4A3C;
+}
+
+.weather-container {
+  height: fit-content;
+  margin: 10px 50px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  box-shadow: 10px 15px 6px rgba(14, 10, 57, 0.255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  border: 2px solid #D9D9D9;
+}
+
+.weather-container h2 {
+  margin: 0 auto;
+  border: 0px dotted yellow;
+  min-height: fit-content;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 5px 15px 5px 15px;
+  font-family: "Libre Bodoni";
+}
+
+
+/* •••• CURRENT WEATHER •••• */
+
+.current-weather {
+  background-color: #F8F8F8;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 5px 4px 0 #17223b9e;
+  width: inherit;
+  height: 50vh;
+}
+
+#current-weather {
+  border: 4px solid #F2C2C2;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+
+#current-weather h2 {
+  font: 0.9em "Poppins";
+  font-style: oblique;
+  padding: 10px 5px 2px 5px;
+
+}
+
+
+#current-weather h1 {
+  align-self: center;
+  text-shadow: 0 0 5px #191919;
+  color: #f8f8f8;
+}
+
+#current-weather p {
+  align-self: center;
+  color: #2C4A3C;
+  font-size: 1.29em;
+  background-color: #F2C2C2;
+  margin: 0px auto;
+  font-family: "poppins";
+  width: 100%;
+  padding: 15px 0;
+  border-top: 2px solid #2C4A3C;
+  border-bottom: 2px solid #2C4A3C;
+}
+
+
+#current-weather div {
+  padding: 15px;
+  background-color: #2C4A3C;
+  border-radius: 1em;
+  color: #F8F8F8;
+  text-shadow: 0 0 4px #000;
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  align-self: center;
+
+}
+
+#current-weather figure {
+  color: #415d4c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: #f8f8f882;
+  height: 50%;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+#current-weather span {
+  background-color: #f8f8f882;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#current-weather div h3 {
+  margin-bottom: 10px;
+  color: #f8f8f8;
+}
+
+#current-weather div h4 {
+  padding-top: 10px;
+  border-top: 2px solid white;
+}
+
+/* •••• BACKGROUND GIF •••• */
+.clear-sky,
+.mainly-clear,
+.partly-cloudy {
+  background: url(https://i.pinimg.com/originals/48/b0/1a/48b01a4d7f2627a2b51043f8e2965994.gif) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.overcast {
+  background-image: url(https://i.gifer.com/7RtV.gif);
+}
+
+.fog,
+.deposition-rime-fog {
+  background-image: url(https://64.media.tumblr.com/2b021baef09efaa8cb401e2b040f153e/tumblr_p2murb7kvQ1qkprgpo1_1280.gifv);
+}
+
+.light-drizzle,
+.moderate-drizzle,
+.light-freezing-drizzle,
+.dense-freezing-drizzle,
+.dense-drizzle,
+.slight-rain,
+.moderate-rain,
+.heavy-rain,
+.light-freezing-rain,
+.heavy-freezing-rain,
+.slight-rain-showers,
+.moderate-rain-showers,
+.violent-rain-showers {
+  background-color: #3568e8a0;
+  background: url(https://i.pinimg.com/originals/9f/72/a4/9f72a4881c7f3791da3dadf12e218efb.gif) center center no-repeat;
+  background-size: cover;
+}
+
+
+
+.thunderstorm,
+.thunderstorm-slight-hail,
+.thunderstorm-heavy-hail {
+  background-image: url();
+}
+
+.slight-snow-fall,
+.moderate-snow-fall,
+.heavy-snow-fall,
+.snow-grains,
+.slight-snow-showers,
+.heavy-snow-showers {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07ed52f9-65de-4d91-afc1-6d9594f0de81/dgcrk6y-108ae35e-7ddb-42fb-b48b-c11ace2619e1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA3ZWQ1MmY5LTY1ZGUtNGQ5MS1hZmMxLTZkOTU5NGYwZGU4MVwvZGdjcms2eS0xMDhhZTM1ZS03ZGRiLTQyZmItYjQ4Yi1jMTFhY2UyNjE5ZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TfsMTpLiOpkMz3Lf0ezyR0VZGTOV8De_BoQmZkPjkCs);
+}
+
+
+
+/* •••• HOURLY •••• */
+.hourly-forecast {
+  width: inherit;
+  border: 3px solid #2C4A3C;
+  border-radius: inherit;
+}
+
+.hourly-forecast figure {
+  display: flex;
+  flex-direction: row;
+  word-spacing: 4px;
+  position: relative;
+}
+
+#hourly-forecast {
+  background-color: #2C4A3C;
+  overflow: auto;
+}
+
+#hourly-forecast section {
+  display: flex;
+  padding: 10px 10px 10px 0;
+  margin: 5px;
+  overflow-x: auto;
+  position: relative;
+  border-top: 2PX SOLID #F2C2C2;
+  border-bottom: 2PX SOLID #F2C2C2;
+}
+
+#hourly-forecast section:hover {
+  background-color: #2c4a3ca6;
+}
+
+.hourly-forecast ul:hover {
+  color: #2C4A3C;
+  background-color: #F2C2C2;
+  border-color: #f8f8f8;
+  font-weight: 600;
+}
+
+#hourly-forecast h3 {
+  text-align: center;
+  background-color: rgb(231, 231, 231);
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: sticky;
+  left: 0;
+  /* Position the h3 element sticky to the left side */
+  margin: ;
+  /* Flexbox properties */
+  display: flex;
+  align-items: center;
+  /* Align vertically */
+}
+
+
+
+.hourly-forecast ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  background-color: #ffffff21;
+  max-width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  color: #F8F8F8;
+}
+
+.hourly-forecast ul li {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.daily-forecast {
+  border: 2px solid #2C4A3C;
+}
+
+.daily-forecast h4 {
+  color: #2C4A3C;
+  margin: 0 auto;
+  border: 2px solid #2C4A3C;
+  width: 70px;
+  ;
+  vertical-align: middle;
+  background-color: #F2C2C2;
+}
+
+.daily-forecast p {
+  background-color: ;
+
+}
+
+.daily-forecast span {
+  display: flex;
+  border: 2px solid #F2C2C2;
+  margin: 10px auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.daily-forecast {
+  background-color: #D9D9D9;
+  margin: 10px;
+  width: 100%;
+  border-radius: 1em;
+  padding: 20px;
+}
+
+#daily-forecast {
+  background-color: #f8f8f8;
+  border-bottom: 13px solid #D9D9D9;
+  border-left: 13px solid #D9D9D9;
+  border-right: 13px solid #D9D9D9;
+}
+
+#daily-forecast section {
+  border: 2px solid #2C4A3C;
+  padding: 20px 0;
+
+}
+
+
+#daily-forecast h4 {
+  padding: 5px;
+  text-align: center;
+  font: 1em "Poppins"
+}
+
+#daily-forecast div {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  min-width: none;
+  margin: 0 auto;
+  border: 2px solid;
+  border-radius: 3ex;
+  background: rgb(0, 151, 255);
+  background: linear-gradient(90deg, rgba(0, 151, 255, 0.75) 0%, rgba(255, 82, 82, 0.75) 100%);
+}
+
+#daily-forecast div p {
+  height: min-content;
+  margin: 0 auto;
+  min-width: 90px;
+  text-align: center;
+  align-self: center;
+}
