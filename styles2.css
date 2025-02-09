@@ -1,0 +1,287 @@
+/* Global Styles */
+body {
+    font-family: "Times New Roman", serif;
+    color: #3b2c2c;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #d4c7ae7b;
+    padding: 0;
+    text-align: center;
+    border-bottom: 5px solid #3b2c2c;
+}
+
+.banner {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-image: url(./images/toileDeJouyBanner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #3b2c2c;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+    padding-bottom: 2px;
+}
+
+nav ul li a:hover {
+    box-shadow: inset 0 -2px 0 #3b2c2c;
+    text-decoration: none;
+    color: #3b2c2c;
+}
+
+/* Layout */
+
+main.home {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border: 0px dotted magenta;
+    background-color: #f8f1e9;
+}
+
+.left-panel, .right-panel {
+    min-width: 150px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    main.home {
+        grid-template-columns: 1fr; /* Stack into one column for small screens */
+    }
+    .left-panel, .right-panel, .content {
+        max-width: 100%; /* Make sure they stay in line */
+    }
+}
+
+.decoration {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration img {
+    width: 100%;
+    height: auto;
+
+    max-width: 236px; /* Ensure it doesn't get too large */
+}
+
+.button-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Position the buttons to match the empty spaces */
+.pillar-btn {
+    width: 236px;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3b2c2c;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.0); /* Subtle background */
+    border: 0px solid #3b2c2c;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Hover effect */
+.pillar-btn:hover {
+    background-color: rgba(219, 196, 164, 0.0);
+    border: 0px solid #3b2c2c;
+    text-shadow: 0px -16px 0px rgba(176, 141, 91, 0.499), 0px 15px 0px rgb(79, 10, 10);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+
+/* Frames */
+.frame {
+    border: 3px solid #3b2c2c;
+    padding: 10px;
+    background-color: #f8f1e9;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.frame a {
+    text-decoration: none;
+    color: #3b2c2c;
+}
+
+.frame:hover {
+    background-color: #e0d4c3;
+}
+
+/* House Image */
+.house-image {
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px;
+    border: 2px ridge #3b2c2c;
+    filter: contrast(120%) brightness(80%) grayscale(60%) sepia(10%);
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/seamlessClockBorder.png');
+    background-position: 90% 90%;
+}
+
+/* About Section */
+.about {
+    background-color: #f8f1e9;
+    padding: 20px;
+    border: 5px solid #3b2c2c;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    background-color: #d4c7ae;
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid #3b2c2c;
+    margin-top: auto;
+}
+
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('https://fonts.cdnfonts.com/s/18434/Digital-7.woff') format('woff');
+}
+
+/* Clock Container */
+.clock-container {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px ridge #3b2c2c;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffffff, #dddddd);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background: black;
+    top: 20%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transition: transform 0.5s linear;
+}
+.center-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Mukta Malar';
+    font-size: 14px;
+}
+.hour-marker {
+    position: absolute;
+    transform-origin: 50% 50%;
+    font-size: 14px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-90px) rotate(calc(-1 * var(--angle)));
+}
+
+.self-image {
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px;
+    border: 2px ridge #3b2c2c;
+    filter: contrast(120%) brightness(80%) grayscale(60%) sepia(10%);
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/profileMe.jpg');
+    background-size: contain;
+    background-position: center center;
+}
+
