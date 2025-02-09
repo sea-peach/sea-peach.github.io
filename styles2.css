@@ -285,3 +285,75 @@ footer {
     background-position: center center;
 }
 
+
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #3b2c2c;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3b2c2c;
+  }
+  input, textarea {
+    width: ;
+    padding: 10px;
+    border: 2px solid #3b2c2c;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f8f1e9;
+    margin: ;
+  }
+  textarea {
+    resize: vertical;
+  }
+
+.socials {
+    border: 0px solid red;
+   width: 50%;
+   margin: 0 auto;
+}
+
+
+.socials p {
+    font-style: oblique;
+    font-weight: 800;
+}
+
+  .socials li {
+    font-size: 1.333em;
+    list-style: none;
+    display: flex;
+    flex-direction: ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .socials a { 
+    text-decoration: none;
+    color: #3b2c2c;
+    background-color: #d4c7ae;
+    height: fit-content;
+    border-radius: 1em;
+    padding: 8px 16px;
+  }
+
+  .socials a:hover {
+    background-color:#e0d4c3 ;
+
+  }
+
+  .socials a:visited {
+    color: #3b2c2c
+  }
