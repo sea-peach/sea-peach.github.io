@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles2.css">
+    <link rel="stylesheet" href="./blogStyle.css">
+    <title>musings.</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo"></div>
+        </div>
+        <h1>JGRG</h1>
+        <nav>
+            <ul>
+                <li><a href="./seapeach2.html">Home</a></li>
+                <li><a href="./myWork.html">My Work</a></li>
+                <li><a href="./aboutMe.html">About Me</a></li>
+                <li><a href="./myBlogHome.html">My Musings</a></li>
+                <li><a href="./contactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery-container">
+
+            <div class="image-card film-frame">
+
+                <img src="./images/fairyPath2024.jpeg" alt="Image 1">
+                <div class="caption">time loops and loops...</div>
+
+            </div>
+            <div class="image-card film-frame">
+                <img src="./images/pineconeSun2024.jpeg" alt="Image 2">
+                <div class="caption">ordinarily uncanny</div>
+            </div>
+            <div class="image-card film-frame">
+                <img src="/images/birdMenuWinter2024.jpeg" alt="Image 3">
+            </div>
+            <div class="image-card film-frame">
+                <img src="./images/meadowlandSunset2024.jpeg" alt="Image 4">
+                <div class="caption">"A pause, a breath, a fleeting memory."</div>
+            </div>
+        </div>
+        <section class="blog-section">
+        <h2>some things i think</h2>
+        <div class="blogDirectory">
+            <ul id="blogList"></ul>
+        </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const blogPosts = [
+                // { title: "Latest Reflections", date: "2025-01-30", link: "./blogTemplate5.html", img: "./images/sleepyHead.PNG" },
+                 //{ title: "The Uncanny in the Ordinary", date: "2025-01-25", link: "./blogTemplate4.html", img: "./images/ladyToAll.PNG" },
+                { title: "Fleeting Thoughts", date: "2025-01-20", link: "./blogTemplate3.html", img: "./images/blog3.jpg" },
+                { title: "A Pause in Time", date: "2025-01-15", link: "./blogTemplate2.html", img: "./images/blog4.jpg" }, 
+                { title: "First Musings", date: "2025-02-07", link: "./blogTemplate1.html", img: "./images/sleepyHead.PNG" }
+            ];
+
+            const blogList = document.getElementById("blogList");
+            blogPosts.forEach(post => {
+                const card = document.createElement("div");
+                card.className = "blog-card";
+
+                card.innerHTML = `
+                <a href="${post.link}">
+                    <img src="${post.img}" alt="${post.title}">
+                    <div class="blog-content">
+                        <p>${post.title} - ${post.date}</p>
+                    </div>
+                </a>
+            `;
+                blogList.appendChild(card);
+            });
+        });
+    </script>
+</body>
+
+</html>
