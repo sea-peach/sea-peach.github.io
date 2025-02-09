@@ -33,54 +33,55 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./myWorkStyle.css" />
-    <title>My Work</title>
-  </head>
-  <body>
-    <!--TOP NAV BAR-->
-
+    <link rel="stylesheet" href="./styles2.css" />
+    <title>JGRG - My Work</title>
+</head>
+<body>
+    <!-- HEADER -->
     <header>
-      <nav>
-        <!--navigation bar-->
-        <button class="homeBtn"><a href="./index.html">home</a></button>
-        <button class="topNavBtn"><a href="./myWork.html">my work</a></button>
-        <button class="topNavBtn">
-          <a href="./aboutMe.html">about my being</a>
-        </button>
-        <button class="topNavBtn">
-          <a href="./contactMe.html">contact me!</a>
-        </button>
-      </nav>
-    </header>
-      <!--nav section container-->
-      <div class="pageTitle">
+        <div class="banner">
+            <div class="logo"></div>
+        </div>
         <h1>JGRG</h1>
-        <p>jessica grace</p>
-      </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./myWork.html">My Work</a></li>
+                <li><a href="./aboutMe.html">About Me</a></li>
+                <li><a href="./myBlogHome.html">My Musings</a></li>
+                <li><a href="./contactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="containerGlass">
-      
-      <button class="glassButton">
-        <a href="./aboutMe.html">
-          <h2>me and my muZines</h2>
-        </a>
-      </button>
-      <section class="dropGlassMenu">
-      <button class="glassButton"><a href="./resumeMe.html"><h2>resume</h2></a></button>
-      
-      <button class="glassButtonDrop">
-        <a href=""><h4>business site mockup</h4></a>
-      </button>
-      <button class="glassButtonDrop">
-        <a href="/WeatherWizard/testjavascript.html">
-          <h4>the weather wizard</h4>
-        </a>
-      </button>
-    </section>
-    
-      
-    </div>
-    <script src="./script.js"></script>
-  </body>
+    <!-- MAIN CONTENT -->
+    <main class="home">
+        <section class="left-panel">
+            <div class="frame"><a href="./index.html">Home</a></div>
+            <div class="frame"><a href="./myWork.html">My Work</a></div>
+            <div class="decoration"></div>
+        </section>
+
+        <section class="content">
+            <div class="about">
+                <h2>MY WORKS</h2>
+                <p>here lies a little collection of my thoughts and creations. Each piece reflects a fragment of my ever-evolving self. explore and find what resonates with you.</p>
+                <div class="frame"><a href="./myBlogHome.html">My Musings</a></div>
+              <!--<div class="frame"><a href="./resumeMe.html">Resume</a></div>-->
+                <div class="frame"><a href="./WeatherWizard/testjavascript.html">The Weather Wizard</a></div>
+            </div>
+        </section>
+
+        <section class="right-panel">
+            <div class="frame"><a href="./aboutMe.html">About Me</a></div>
+            <div class="frame"><a href="./myBlogHome.html">My Musings</a></div>
+            <div class="decoration"></div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Web Design by JGRG.</p>
+    </footer>
+</body>
 </html>
