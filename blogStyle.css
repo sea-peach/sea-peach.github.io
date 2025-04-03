@@ -203,6 +203,14 @@ footer {
     margin: 20px auto;
 }
 
+embed {
+    margin: 0 auto;
+    min-height: 500px;
+    min-width: 600px;
+
+}
+
+
 
 
 
