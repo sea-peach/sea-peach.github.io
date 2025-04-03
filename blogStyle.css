@@ -205,8 +205,8 @@ footer {
 
 embed {
     margin: 0 auto;
-    min-height: 500px;
-    min-width: 600px;
+    min-height: 85vh;
+    min-width: 90vw;
 
 }
 
